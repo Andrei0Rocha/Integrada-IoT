@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Pessoal</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("../assets/bg-desktop.jpg"); 
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 2.5em;
+            margin: 20px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 30px;
+            color: #000000;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            width: 100%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        /* Foto de Perfil */
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid #fff;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.1em;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        iframe {
+            max-width: 80%;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .media {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .media img {
+            max-width: 45%;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2, h3 {
+                font-size: 1.5em;
+            }
+
+            .photo, .media img {
+                max-width: 90%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Minha Página Pessoal</h1>
+
+    <div class="container">
+        <!-- Informações Pessoais -->
+        <div class="section">
+            <h2>Informações Pessoais</h2>
+            <!-- Foto de Perfil -->
+            <img src="../assets/eu.jpeg" alt="Foto de Andrei Santos" class="photo">
+            <p><strong>Nome:</strong> Andrei Santos da Rocha</p>
+            <p><strong>Idade:</strong> 18 anos</p>
+            <p><strong>Interesses:</strong> Tecnologia, Rap, Esportes, Viagens, Grafite, Games, Astronomia, Política, História, etc.</p>
+            <p><strong>Hobbies:</strong> No meu tempo livre gosto de praticar esportes como vôlei, basquete e futebol, além de passar um tempo com família e amigos.</p>
+        </div>
+
+        <!-- Reflexão sobre o Ensino Médio -->
+        <div class="section">
+            <h2>Reflexão sobre o Ensino Médio</h2>
+            <p>O ensino médio foi um período de grande aprendizado e crescimento para mim. Através das aulas, pude explorar diversas áreas do conhecimento e descobrir o que realmente me apaixona. Além disso, foi no ensino médio que aprendi a importância da dedicação e da disciplina para alcançar meus objetivos. Durante esse período, também desenvolvi habilidades sociais e de trabalho em grupo, que foram essenciais para meu desenvolvimento pessoal e profissional.</p>
+        </div>
+
+        <!-- Tarefas Favoritas -->
+        <div class="section">
+            <h2>Tarefas Favoritas</h2>
+            <p>Aqui estão algumas das tarefas que mais gostei de realizar ao longo do meu período escolar. Essas atividades não só me ensinaram novos conteúdos, mas também me permitiram desenvolver habilidades práticas e criativas.</p>
+            
+            <h3>Atividade de Final de Bimestre 2 ano de IoT</h3>
+            <p>Nessa tarefa tivemos que criar uma rede Wan com comunicação entre todos aparelhos da rede. Mesmo sob grande pressão, eu gostei muito de fazer esse trabalho, pois pude colocar em prática e ver de forma visual o que havia aprendido sobre redes até aquele momento.</p>
+            <div class="media">
+                <img src="../assets/rita.jpeg" alt="Imagem da Tarefa 1">
+            </div>
+
+            <h3>Tarefa do Carrinho</h3>
+            <p>Nessa tarefa tivemos que realizar a montagem de um carrinho seguidor de linha com uma placa Arduino. Mesmo enfrentando algumas dificuldades na regulação dos sensores, ver o carrinho em funcionamento no final foi um sentimento gratificante.</p>
+            <div class="media">
+                <img src="../assets/CARRINHO-01.png" alt="Imagem da Tarefa 3">
+            </div>
+
+            <!-- Adicionar mais se necessário -->
+        </div>
+    </div>
+
+</body>
+</html>

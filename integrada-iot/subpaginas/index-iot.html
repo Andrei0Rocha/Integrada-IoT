@@ -7,247 +7,299 @@
 
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin-left: 0;
-            padding: 20px;
-            
-            background-image: url("../assets/bg-desktop.jpg"); 
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("../assets/bg-desktop-light.jpg"); 
             background-size: cover; 
             background-position: center; 
             color: #333;
-        }
-        h1 {
             text-align: center;
-            color: #e8edf3;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .disciplina {
-            background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com leve transparência */
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-            padding: 20px;
-            width: 200px;
-            text-align: center;
-        }
-        .foto {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .tarefas {
-            margin-top: 40px;
-            background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com leve transparência */
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-            color: #333;
+        /* Estilo para o cabeçalho */
+        h1 {
+            color: #000000;
+            font-size: 2.5em;
+            margin: 20px;
+            text-transform: uppercase;
         }
+
+        h2, h3 {
+            color: #000000;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            margin-top: 20px;
+        }
+
+        /* Container principal para alinhar o conteúdo */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px auto;
+            max-width: 1100px;
+            padding: 20px;
+            background-color: rgb(255, 255, 255); /* Fundo transparente para destacar conteúdo */
+            border-radius: 15px;
+        }
+
+        /* Estilo de conteúdo principal */
         .document {
-            max-width: 800px;
-            margin: auto;
+            width: 100%;
             background: white;
             padding: 20px;
-            border: 1px solid #ccc;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .tarefas {
+            background-color: rgb(255, 255, 255);
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            margin-bottom: 30px;
         }
-        h1, h2, h3 {
-            text-align: center;
+
+        .tarefas ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .tarefas ul li {
             margin: 10px 0;
+            font-size: 1.2em;
         }
-        h1 {
-            font-size: 24px;
+
+        /* Imagens dentro de div com o máximo de largura possível */
+        .foto, .tarefas img, .document img {
+            max-width: 80%;
+            margin: 20px auto;
+            border-radius: 10px;
         }
-        h2 {
-            font-size: 20px;
+
+        /* Estilo de vídeos */
+        iframe {
+            max-width: 80%;
+            border-radius: 10px;
+            margin-top: 20px;
         }
-        h3 {
-            font-size: 18px;
-        }
-        p, li {
+
+        /* Definir margens internas em links e listas */
+        p, ol, ul {
+            margin-top: 15px;
+            line-height: 1.8;
+            font-size: 1.1em;
             text-align: justify;
-            margin: 10px 0;
-            line-height: 1.6;
         }
-        ul {
-            margin: 10px 0;
+
+        ol {
             padding-left: 20px;
         }
-        .page-break {
-            page-break-after: always;
+
+        /* Organizando o conteúdo para os dispositivos móveis */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2, h3 {
+                font-size: 1.5em;
+            }
+
+            .foto, .tarefas img {
+                max-width: 95%;
+            }
+
+            iframe {
+                max-width: 95%;
+            }
         }
+
     </style>
 
 </head>
 <body>
 
-    <h1>Internet das Coisas</h1>
+    <h1>Internet das Coisas - Projeto de IoT</h1>
 
     <div class="container">
         <div class="disciplina">
             <img src="../assets/iot-logo.png" alt="" class="foto">
-            <h3>IoT</h3>
-            <p>GLAUCO ROBERTO PEREIRA SILVA</p>
+            <h2>Matematica</h2>
+            <h3>Glauco P Silva</h3>
         </div>
     </div>
 
+    <div class="container">
+        <!-- Atividade Carrinho -->
+        <div class="document">
+            <h2>Atividade do Carrinho Arduino</h2>
+            <ul>Equipe: Andrei Rocha, Felipe Costa, Kauã Humberto e Mateus Kelm</ul>
 
-    <h1>Descrição atividade do Carrinho e Boné</h1>
-    <div class="document">
-        <h1>INSTITUTO DE ENSINO SENAC</h1>
-        <h2>Atividade Carrinho</h2>
-        <p>Andrei Rocha, Felipe Costa, Kauã Humberto e Mateus Kelm.</p>
-        <h3>Relatório do projeto</h3>
-        <p>São Paulo 2024</p>
+            <h3>Relatório do Projeto</h3>
+            <ul>O projeto do carrinho seguidor de linha foi desenvolvido como parte do curso de IoT da turma 1 do Senac Nações Unidas, com o objetivo de integrar a robótica ao aprendizado da Internet das Coisas.</ul>
 
-        <div class="page-break"></div>
+            <h3>Materiais Utilizados</h3>
+            <ul>
+                <li>Kit de robótica Arduino (placa Arduino, motor, rodas, sensores de linha, etc.)</li>
+                <li>Software Arduino IDE</li>
+                <li>Ferramentas de solda (opcional)</li>
+                <li>Tinkercad para simulação</li>
+                <li>Câmera ou celular para registro de fotos e vídeos</li>
+            </ul>
 
-        <h3>Relatório do projeto</h3>
-        <p>Trabalho carrinho apresentado ao Curso de IOT turma 1 do Senac Nações Unidas.</p>
-        <p>São Paulo 2024</p>
+            <h3>Montagem e Programação</h3>
+            <ul>O projeto foi montado seguindo os tutoriais disponíveis. As etapas envolveram a montagem física do carrinho, a programação do código de controle e a realização de testes.</ul>
 
-        <div class="page-break"></div>
+            <img src="../assets/CARRINHO-01.png" alt="Imagem do Carrinho 1">
+            <img src="../assets/CARRINHO-02.png" alt="Imagem do Carrinho 2">
 
-        <h3>Sumário</h3>
-        <ol>
-            <li>Introdução .............................................................................................................................7</li>
-            <li>Desenvolvimento....................................................................................................................7</li>
-            <li>Resultados...............................................................................................................................9</li>
-            <li>Análise dos Resultados...........................................................................................................9</li>
-            <li>Possíveis Melhorias...............................................................................................................9</li>
-            <li>Conclusão.............................................................................................................................10</li>
-            <li>Integração com outras áreas do conhecimento.................................................................10</li>
-            <li>Referências Bibliográficas..................................................................................................11</li>
-        </ol>
+            <h3>Vídeo do Projeto</h3>
+            <iframe src="../assets/20240916_154911.mp4" width="100%" height="500" allowfullscreen></iframe>
+        </div>
 
-        <div class="page-break"></div>
-
-        <h3>INTRODUÇÃO</h3>
-        <p>A robótica é uma área em crescente importância na sociedade contemporânea, impactando diversos setores, como a indústria, medicina e educação. Este projeto visa explorar conceitos fundamentais da robótica e suas aplicações práticas, proporcionando aos alunos uma experiência enriquecedora.</p>
-
-        <h3>Desenvolvimento</h3>
-        <h4>Etapa 1: Planejamento</h4>
-        <p>Nesta etapa, foram definidos os objetivos do carrinho seguidor de linha foi selecionado por ser um projeto introdutório que permite a integração de diversos conceitos.</p>
-
-        <h4>Etapa 2: Materiais Utilizados</h4>
-        <p>Os materiais necessários foram listados e adquiridos:</p>
-        <ul>
-            <li>Kit de robótica Arduino (ou componentes individuais: placa Arduino, motor, rodas, chassi, sensores de linha, etc.)</li>
-            <li>Software Arduino IDE</li>
-            <li>Ferramentas de solda (opcional)</li>
-            <li>Tinkercad</li>
-            <li>Câmera ou celular para registro de fotos e vídeos</li>
-        </ul>
-
-        <h4>Etapa 3: Montagem</h4>
-        <p>A montagem do carrinho foi realizada conforme o esquema do tutorial encontrado em Eletrogate. A seguir, algumas fotos da montagem:</p>
-        <img src="../assets/CARRINHO-01.png" alt="">
-        <img src="../assets/CARRINHO-02.png" alt="">
-        <h4>Etapa 4: Programação</h4>
-        <p>O código fonte foi desenvolvido
-            <h2>Tarefas do Carrinho Video</h2>
-            <iframe src="../assets/20240916_154911.mp4" width="100%" height="800"></iframe>
-
-
-            <h2>Atividade Boné</h2>
-
-    <div class="tarefas">
-        <h2>Atividade Boné</h2>
-       
-        <h3>Introdução</h3>
-        <ol>Foi dado a nós o objetivo de fazer um sistema inovador incorporado em um boné que
-            funcione como um sensor de ré e deve ser capaz de detectar objetos próximos, emitir sinais
-            sonoros e visuais de alerta, além de identificar a ausência de luz ambiente. Para fazer o sistema,
-            utilizaremos a plataforma Arduino para implementar e integrar todos os componentes
-            necessários.</ol>
+        <!-- Atividade Boné -->
+        <div class="tarefas">
+            <h2>Atividade do Boné - Sensor de Ré</h2>
+            <ul>Objetivo: Criar um sistema inovador incorporado a um boné que funcione como sensor de ré, detectando objetos próximos e emitindo sinais de alerta.</ul>
 
             <h3>Dia 1</h3>
-            <ol>No primeiro dia nos praticamente terminamos a atividade, pois desenvolvemos o código
-                completo da programação e também colocamos todos os componentes no Arduino. Tinha dado
-                tudo certo e tudo funcionando perfeitamente. Não terminamos pois não tiamos boné nem a
-                bateria pra ligar o Arduino. Se tivéssemos, já terminariamos naquele dia mesmo, faltando só o
-                relatório.</ol>
-                <img src="../assets/bone-01.PNG" alt="">
+            <ul>O código foi concluído e os componentes estavam funcionando corretamente, mas não conseguimos finalizar o projeto devido à falta de materiais (boné e bateria).</ul>
+            <img src="../assets/bone-01.PNG" alt="Imagem do Boné 1">
 
-                <h3>Dia 3</h3>
-                <ol> O segundo dia foi um tremendo fracasso. Primeiro que o integrante do nosso grupo Kauã
-                    machucou o joelho e não pôde comparecer e também o Andrei teve que sair para ensaiar a dança
-                    para o maracatu rural. Então ficou eu e o Kelm montando o Arduino e também foi um fracasso
-                    pois não estava funcionando. Depois descobrimos que alguns fios estavam conectados errados.
-                    Tentamos arrumar mas logo desistimos pois descobrimos que ninguém trouxe a bateria para
-                    conectar junto no boné. E também tinha que fazer o relatório mas o tempo da aula estava
-                    acabando. Felizmente o professor deu mais uma semana para entrega.</ol>
-                    <img src="../assets/bone-02.PNG" alt="">
+            <h3>Dia 2</h3>
+            <ul>No segundo dia, a atividade foi frustrante devido a erros de conexão no Arduino e a falta de materiais essenciais. No entanto, conseguimos identificar os problemas.</ul>
+            <img src="../assets/bone-02.PNG" alt="Imagem do Boné 2">
 
-                    <h3>Dia 3</h3>
-                    <ol>Nesse dia deu tudo certo. Conseguimos fazer tudo. Dessa vez montamos o Arduino
-                        corretamente, o código funcionou também. Trouxemos os materiais necessários e colocamos
-                        tudo certinho no boné. Foi um sucesso!</ol>
-                        <img src="../assets/bone-03.PNG" alt="">
-                        <img src="../assets/bone-04.PNG" alt="">
+            <h3>Dia 3</h3>
+            <ul>Finalmente, conseguimos realizar a montagem corretamente, integrar todos os componentes e fazer o sistema funcionar perfeitamente.</ul>
+            <img src="../assets/bone-03.PNG" alt="Imagem do Boné 3">
+            <img src="../assets/bone-04.PNG" alt="Imagem do Boné 4">
 
-                        <h3>Integração com as disciplinas</h3>
+            <h3>Integração com as Disciplinas</h3>
+            <h4>Ciências da Natureza</h4>
+            <img src="../assets/bone-05.PNG" alt="Ciências da Natureza">
 
-                        <h3>Ciências da Natureza:</h3>
-                        <img src="../assets/bone-05.PNG" alt="">
+            <h4>Física</h4>
+            <ul>Estudo dos sensores ultrassônicos e análise dos componentes eletrônicos utilizados.</ul>
 
-                        <h3>Fisica</h3>
-                        <ol>- Estudo dos sensores ultrassônicos utilizados para detectar objetos próximos.
-                            - Análise dos componentes eletrônicos, como resistores, capacitores e LEDs.
-                            - Compreensão das ondas sonoras e como são usadas para medir distâncias.</ol>
+            <h4>Química</h4>
+            <ul>Investigação sobre os materiais dos componentes eletrônicos e impactos ambientais.</ul>
 
-                            <h3>Quimica</h3>
-                            <ol> - Investigação sobre os materiais dos componentes eletrônicos e sua reatividade.
-                                - Análise dos impactos ambientais dos componentes eletrônicos.</ol>
+            <h4>História</h4>
+            <ul>Pesquisa sobre a evolução dos sensores e eletrônica vestível.</ul>
 
-                                <h3>Ciencias Humanas</h3>
-                                <img src="../assets/bone-06.PNG" alt="">
+            <h4>Geografia</h4>
+            <ul>Análise do impacto ambiental da produção e descarte dos componentes.</ul>
 
-                                <h3>Historia</h3>
-                                <ol>- Pesquisa sobre a evolução dos sensores e da tecnologia de ultrassom.
-                                    - Estudo do desenvolvimento histórico da eletrônica vestível.</ol>
+            <h4>Matemática</h4>
+            <ul>Cálculos para determinar distâncias e ajustar a sensibilidade dos sensores.</ul>
+        </div>
 
-                                    <h3>Geografia</h3>
-                                    <ol> - Análise do impacto ambiental da produção e descarte de componentes eletrônicos.
-                                         - Investigação de como diferentes condições ambientais (como temperatura e umidade) podem
-                                        afetar o funcionamento dos sensores.</ol>
+        <div class="tarefas">
+            <h2>Atividade do 4° Bimestre - Dispenser de Ração</h2>
+           
+            <h3>INTRODUÇÃO</h3>
+            <ul>O objetivo deste projeto é desenvolver um dispensador de ração automatizado, controlado 
+                por tempo, utilizando a plataforma Arduino. O dispensador será projetado para liberar a 
+                quantidade de ração de forma precisa e programada, permitindo a alimentação de animais de 
+                estimação em horários específicos, sem a necessidade de intervenção manual. O sistema 
+                incluirá mecanismos para acionar a dispensa de ração no momento determinado. A solução 
+                será composta por um conjunto de componentes eletrônicos integrados e será programada de 
+                forma eficiente para garantir o funcionamento adequado e confiável</ul>
 
-                                        <h3>Linguagens</h3>
-                                        <img src="../assets/bone-07.PNG" alt="">
+                <h2>Dia 1</h2>
+                <ul>No primeiro dia foi sorteado o tema para nós e ficamos com o projeto do carrinho com 
+                    sensor de ré. Como o sorteio foi no fim da aula não deu tempo para começar o trabalho</ul>
+                    <img src="../assets/4b-01.png" alt="">
 
-                                        <h3>Matematica</h3>
-                                        <ol>- Cálculos para determinar as distâncias medidas pelos sensores ultrassônicos.
-                                            - Análise de dados coletados pelos sensores para ajustar a sensibilidade e calibrar o sistema.</ol>
-                                            <img src="../assets/bone-08.PNG" alt="">
+                    <h2>Dia 2</h2>
+                    <ul>O segundo dia foi um tremendo fracasso. Nesse dia estavamos com problemas na 
+                        montagem do projeto anterior que era o do carrinho. Estavamos tendo problemas pois não 
+                        chegava energia na ponte H. Conversamos com o professor e ele disse que ia pensar em alguma 
+                        coisa para resolver</ul>
+                        <img src="../assets/4b-02.png" alt="">
 
+                        <h2>Dia 3</h2>
+                        <ul>Nesse dia tentamos fazer funcionar de todo o jeito, mas infelizmente nada funcionava. 
+                            Conversamos com o professor e ele deu a possibilidade de trocarmos de projeto. O professor 
+                            mandou a gente escolher entre dois projetos e escolhemos fazer o do dispensador de ração 
+                            automatizado.
+                            </ul>
+                            <img src="../assets/4b-03.png" alt="">
 
+                            <h2>Dia 4</h2>
+                            <ul>Nesse dia tentamos fazer funcionar de todo o jeito, mas infelizmente nada funcionava. 
+                                Conversamos com o professor e ele deu a possibilidade de trocarmos de projeto. O professor 
+                                mandou a gente escolher entre dois projetos e escolhemos fazer o do dispensador de ração 
+                                automatizado.
+                                </ul>
+                                <img src="../assets/4b-04.png" alt="">
 
+                                <h2>Dia 5</h2>
+                                <ul>Como o display estava dando problemas, levamos ele para a escola para fazer alguns teste e 
+                                    tentar resolver o mais rápido possível esse problema, pois já estávamos ficando sem tempo. 
+                                    Depois de muitos testes, conseguimos arrumar o display e agora com o display funcionando, 
+                                    dava para montar o sistema elétrico</ul>
+                                    <img src="../assets/4b-05.png" alt="">
 
+                                    <h2>Dia 6</h2>
+                                    <ul>Como o display estava dando problemas, levamos ele para a escola para fazer alguns teste e 
+                                        tentar resolver o mais rápido possível esse problema, pois já estávamos ficando sem tempo. 
+                                        Depois de muitos testes, conseguimos arrumar o display e agora com o display funcionando, 
+                                        dava para montar o sistema elétrico</ul>
+                                        <img src="../assets/4b-06.png" alt="">
 
+                                        <h2>CONCLUSÃO </h2>
+                                        <ul>Depois de muitos desafios e dificuldades ao longo do desenvolvimento do projeto, conseguimos 
+                                            concluir o dispensador de ração automatizado. Mesmo enfrentando problemas como a falta de 
+                                            energia na ponte H no projeto inicial e o mau funcionamento do display no projeto atual, não 
+                                            desistimos e continuamos trabalhando até encontrar as soluções necessárias.</ul>
 
-    </div>
-    
-    <div class="tarefas">
-        <h2>Tarefas Favoritas do Aluno</h2>
-        <ul>
-            <li>PRODUÇÃO EXPRESSIONISTA</li>
-            <li>MASCOTE DA SALA</li>
-        </ul>
-        <img src="../assets/lg-01.PNG" alt="">
+                                            <ul>O processo foi cheio de aprendizado, desde a montagem do circuito até a programação do 
+                                                Arduino, e nos mostrou a importância de persistir diante dos obstáculos. Conseguimos integrar 
+                                                todos os componentes e concluir o projeto deixando tudo pronto para os testes e para a 
+                                                apresentação na escola. Essa experiência foi muito valiosa para nossa formação e superou 
+                                                nossas expectativas.
+                                                </ul>
+
+                                                <img src="../assets/4b-07.png" alt="">
+                                                
+                                                <h3>Vídeo do Projeto</h3>
+                                                <iframe src="../assets/dispenser-de-racao.mp4" frameborder="0"></iframe>
+
+        </div>
+
+        <div class="tarefas">
+            <h2>Video da Turma</h2>
+            <ul>
+             Link do video
+            </ul>
+            <img src="../assets/shared image.jpeg" alt="Imagem da Turma um de IoT">
+        </div>
+
+        <div class="tarefas">
+            <h2>Organização dos Armários da Turma</h2>
+            <ul>
+                Cada grupo possue um kit com identificação de alunos e sala. Dentro dos kits temos um local especifico para guardar cada componente de forma que fique tudo organizado.
+            </ul>
+            <iframe src="../assets/armarios-video.mp4" frameborder="0"></iframe>
+        </div>
     </div>
 
 </body>
 </html>
-
