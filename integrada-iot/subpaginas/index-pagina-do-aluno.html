@@ -118,11 +118,41 @@
                 max-width: 90%;
             }
         }
+
+        /* Estilo para o botão de "Voltar" */
+.back-button {
+    background-color: rgba(90, 149, 222, 0.79);  /* Fundo transparente (mais claro) */
+    color: white;  /* Cor do texto */
+    padding: 15px 30px;  /* Aumenta o tamanho do botão */
+    text-decoration: none;  /* Remove o sublinhado do link */
+    border-radius: 10px;  /* Bordas arredondadas */
+    border: 2px solid white;  /* Borda branca */
+    display: inline-block;  /* Para permitir que o botão tenha o tamanho adequado */
+    transition: background-color 0.3s, color 0.3s;  /* Transição suave */
+    font-size: 18px;  /* Aumenta o tamanho da fonte */
+    margin-left: 20px;  /* Ajuste a distância da borda esquerda */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.back-button:hover {
+    background-color: rgba(22, 171, 235, 0.782);  /* Fundo mais escuro ao passar o mouse */
+    color: #ffffff;  /* Cor dourada ao passar o mouse */
+}
+
+/* Garantindo que o botão fique à esquerda */
+ul {
+    list-style: none;  /* Remove os marcadores da lista */
+    padding-left: 0;  /* Remove o preenchimento à esquerda */
+}
     </style>
 
 </head>
 <body>
-
+    <ul>
+        <li>
+            <a href="../index2.html" class="back-button">Voltar</a>
+        </li>
+    </ul>
     <h1>Minha Página Pessoal</h1>
 
     <div class="container">
